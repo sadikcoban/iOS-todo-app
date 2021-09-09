@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9459218626E9F159008B2F00 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9459218526E9F159008B2F00 /* Constant.swift */; };
 		94C01FC326E934CF005C5C2D /* DevoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C01FC226E934CF005C5C2D /* DevoteApp.swift */; };
 		94C01FC526E934CF005C5C2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C01FC426E934CF005C5C2D /* ContentView.swift */; };
 		94C01FC726E934D2005C5C2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C01FC626E934D2005C5C2D /* Assets.xcassets */; };
 		94C01FCA26E934D2005C5C2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C01FC926E934D2005C5C2D /* Preview Assets.xcassets */; };
 		94C01FCC26E934D2005C5C2D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C01FCB26E934D2005C5C2D /* Persistence.swift */; };
 		94C01FCF26E934D2005C5C2D /* Devote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94C01FCD26E934D2005C5C2D /* Devote.xcdatamodeld */; };
+		94C01FD926E93578005C5C2D /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94C01FD626E93577005C5C2D /* sound-tap.mp3 */; };
+		94C01FDA26E93578005C5C2D /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94C01FD726E93577005C5C2D /* sound-ding.mp3 */; };
+		94C01FDB26E93578005C5C2D /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94C01FD826E93578005C5C2D /* sound-rise.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9459218526E9F159008B2F00 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		94C01FBF26E934CF005C5C2D /* Devote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C01FC226E934CF005C5C2D /* DevoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevoteApp.swift; sourceTree = "<group>"; };
 		94C01FC426E934CF005C5C2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		94C01FCB26E934D2005C5C2D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		94C01FCE26E934D2005C5C2D /* Devote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Devote.xcdatamodel; sourceTree = "<group>"; };
 		94C01FD026E934D2005C5C2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94C01FD626E93577005C5C2D /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
+		94C01FD726E93577005C5C2D /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
+		94C01FD826E93578005C5C2D /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +65,14 @@
 			isa = PBXGroup;
 			children = (
 				94C01FC226E934CF005C5C2D /* DevoteApp.swift */,
-				94C01FC426E934CF005C5C2D /* ContentView.swift */,
+				94C01FDD26E935A8005C5C2D /* View */,
 				94C01FC626E934D2005C5C2D /* Assets.xcassets */,
-				94C01FCB26E934D2005C5C2D /* Persistence.swift */,
+				94C01FDE26E935AE005C5C2D /* Extension */,
+				94C01FDF26E935B3005C5C2D /* Utility */,
+				94C01FE026E935B9005C5C2D /* Style */,
+				94C01FE126E935C9005C5C2D /* Model */,
+				94C01FDC26E9359C005C5C2D /* Sound */,
 				94C01FD026E934D2005C5C2D /* Info.plist */,
-				94C01FCD26E934D2005C5C2D /* Devote.xcdatamodeld */,
 				94C01FC826E934D2005C5C2D /* Preview Content */,
 			);
 			path = Devote;
@@ -73,6 +84,55 @@
 				94C01FC926E934D2005C5C2D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		94C01FDC26E9359C005C5C2D /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				94C01FD726E93577005C5C2D /* sound-ding.mp3 */,
+				94C01FD826E93578005C5C2D /* sound-rise.mp3 */,
+				94C01FD626E93577005C5C2D /* sound-tap.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		94C01FDD26E935A8005C5C2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94C01FC426E934CF005C5C2D /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94C01FDE26E935AE005C5C2D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		94C01FDF26E935B3005C5C2D /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9459218526E9F159008B2F00 /* Constant.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		94C01FE026E935B9005C5C2D /* Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		94C01FE126E935C9005C5C2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94C01FCB26E934D2005C5C2D /* Persistence.swift */,
+				94C01FCD26E934D2005C5C2D /* Devote.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +192,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94C01FDB26E93578005C5C2D /* sound-rise.mp3 in Resources */,
+				94C01FDA26E93578005C5C2D /* sound-ding.mp3 in Resources */,
+				94C01FD926E93578005C5C2D /* sound-tap.mp3 in Resources */,
 				94C01FCA26E934D2005C5C2D /* Preview Assets.xcassets in Resources */,
 				94C01FC726E934D2005C5C2D /* Assets.xcassets in Resources */,
 			);
@@ -146,6 +209,7 @@
 			files = (
 				94C01FCC26E934D2005C5C2D /* Persistence.swift in Sources */,
 				94C01FC526E934CF005C5C2D /* ContentView.swift in Sources */,
+				9459218626E9F159008B2F00 /* Constant.swift in Sources */,
 				94C01FCF26E934D2005C5C2D /* Devote.xcdatamodeld in Sources */,
 				94C01FC326E934CF005C5C2D /* DevoteApp.swift in Sources */,
 			);
