@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9430F3CC26EB3BE4004ABCAD /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9430F3CB26EB3BE4004ABCAD /* ListRowItemView.swift */; };
 		9459218626E9F159008B2F00 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9459218526E9F159008B2F00 /* Constant.swift */; };
 		94680CFD26EA251300A68BEE /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94680CFC26EA251300A68BEE /* HideKeyboardExtension.swift */; };
 		94680CFF26EA296300A68BEE /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94680CFE26EA296300A68BEE /* BackgroundImageView.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9430F3CB26EB3BE4004ABCAD /* ListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemView.swift; sourceTree = "<group>"; };
 		9459218526E9F159008B2F00 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		94680CFC26EA251300A68BEE /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 		94680CFE26EA296300A68BEE /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				94680CFE26EA296300A68BEE /* BackgroundImageView.swift */,
 				94680D0026EA2A9D00A68BEE /* NewTaskItemView.swift */,
 				94680D0226EA2E3800A68BEE /* BlankView.swift */,
+				9430F3CB26EB3BE4004ABCAD /* ListRowItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				94680CFD26EA251300A68BEE /* HideKeyboardExtension.swift in Sources */,
 				94680D0326EA2E3800A68BEE /* BlankView.swift in Sources */,
 				9459218626E9F159008B2F00 /* Constant.swift in Sources */,
+				9430F3CC26EB3BE4004ABCAD /* ListRowItemView.swift in Sources */,
 				94C01FCF26E934D2005C5C2D /* Devote.xcdatamodeld in Sources */,
 				94C01FC326E934CF005C5C2D /* DevoteApp.swift in Sources */,
 				94680D0126EA2A9D00A68BEE /* NewTaskItemView.swift in Sources */,
