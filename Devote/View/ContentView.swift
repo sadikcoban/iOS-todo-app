@@ -46,6 +46,7 @@ struct ContentView: View {
                         Button(action: {
                             //toggle appearance
                             isDarkMode.toggle()
+                            playSound(sound: "sound-tap", type: "mp3")
                             
                         }, label: {
                             Image(systemName: isDarkMode ? "moon.circle.fill" : "moon.circle")
@@ -63,6 +64,7 @@ struct ContentView: View {
                     //MARK: - New Task Button
                     Button(action: {
                         showNewTaskItem = true
+                        playSound(sound: "sound-ding", type: "mp3")
                     }, label: {
                         Image(systemName: "plus.circle")
                             .font(.system(size: 30, weight: .semibold, design: .rounded))
@@ -109,8 +111,9 @@ struct ContentView: View {
                 UITableView.appearance().backgroundColor = UIColor.clear
             }
             .navigationBarHidden(true)
-            .background(BackgroundImageView())
-            .blur(radius: showNewTaskItem ? 8 : 0,  opaque: false)
+            .background(BackgroundImageView()
+                            .blur(radius: showNewTaskItem ? 8.0 : 0,  opaque: false)
+)
             .background(backgroundGradient.ignoresSafeArea(.all))
         }//:Navigation
         .navigationViewStyle(StackNavigationViewStyle())
